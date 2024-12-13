@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Siemreap&family=Varela+Round&display=swap');
+
+/* Apply truncation styles to text within a cell */
+.text-truncate {
+  max-width: 150px; /* Adjust based on desired width */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.font-v{
+  font-family: "Varela Round", serif;
+}
+
+td{
+  padding: 15px !important;
+}
