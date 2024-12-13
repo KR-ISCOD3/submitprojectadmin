@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     const fetchStudents = async () => {
       try {
-        const response = await axios.get("http://localhost:3000");
+        const response = await axios.get("https://server-stu-submited.onrender.com");
         setStudents(response.data); // Assuming the response data is an array of students
       } catch (err) {
         setError(err.message || "Error fetching data");
@@ -25,8 +25,8 @@ function App() {
   // Function to handle student deletion
   const handleDelete = async (id) => {
     const deletePromise = async () => {
-      await axios.delete(`http://localhost:3000/${id}`); // Delete the student
-      const response = await axios.get("http://localhost:3000"); // Fetch updated student list
+      await axios.delete(`https://server-stu-submited.onrender.com/${id}`); // Delete the student
+      const response = await axios.get("https://server-stu-submited.onrender.com"); // Fetch updated student list
       setStudents(response.data);
     };
 
